@@ -49,6 +49,7 @@ swift test            # Run all tests
 - Prefer `Int` over other numeric types unless puzzle requires otherwise
 - Use descriptive variable names even for quick solutions
 - Add example test cases from puzzle descriptions before solving with real input
+- **Always analyze and document Time & Space Complexity** for each solution (both parts)
 
 ## Input Handling
 - Store puzzle input in `input.txt` per day directory
