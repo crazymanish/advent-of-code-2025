@@ -12,10 +12,21 @@ let package = Package(
             path: "Sources/Day01",
             resources: [.process("input.txt")]
         ),
+        .executableTarget(
+            name: "Day02",
+            dependencies: [],
+            path: "Sources/Day02",
+            resources: [.process("input.txt")]
+        ),
         .testTarget(
             name: "Day01Tests",
             dependencies: ["Day01"],
             path: "Tests/Day01Tests"
+        ),
+        .testTarget(
+            name: "Day02Tests",
+            dependencies: ["Day02"],
+            path: "Tests/Day02Tests"
         )
     ]
 )
