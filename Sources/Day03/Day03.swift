@@ -7,18 +7,6 @@ struct Day03 {
         self.input = input
     }
 
-    /// Finds the maximum joltage (two-digit number) that can be formed from a bank
-    /// by selecting exactly two batteries while maintaining their relative order.
-    ///
-    /// Strategy: For each position i, consider it as the tens digit and find the
-    /// maximum digit after position i for the units digit. Track the best combination.
-    ///
-    /// Time Complexity: O(n) per line where n is the length of the line
-    /// Space Complexity: O(n) for storing the suffix maximum array
-    func maxJoltageFromBank(_ bank: String) -> Int {
-        return maxJoltageFromBank(bank, selectCount: 2)
-    }
-
     /// Finds the maximum joltage by selecting exactly `selectCount` digits from a bank
     /// while maintaining their relative order.
     ///
