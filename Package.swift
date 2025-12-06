@@ -36,6 +36,12 @@ let package = Package(
             path: "Sources/Day05",
             resources: [.process("input.txt")]
         ),
+        .executableTarget(
+            name: "Day06",
+            dependencies: [],
+            path: "Sources/Day06",
+            resources: [.process("input.txt")]
+        ),
         .testTarget(
             name: "Day01Tests",
             dependencies: ["Day01"],
@@ -60,6 +66,11 @@ let package = Package(
             name: "Day05Tests",
             dependencies: ["Day05"],
             path: "Tests/Day05Tests"
+        ),
+        .testTarget(
+            name: "Day06Tests",
+            dependencies: ["Day06"],
+            path: "Tests/Day06Tests"
         )
     ]
 )
