@@ -48,6 +48,36 @@ let package = Package(
             path: "Sources/Day07",
             resources: [.process("input.txt")]
         ),
+        .executableTarget(
+            name: "Day08",
+            dependencies: [],
+            path: "Sources/Day08",
+            resources: [.process("input.txt")]
+        ),
+        .executableTarget(
+            name: "Day09",
+            dependencies: [],
+            path: "Sources/Day09",
+            resources: [.process("input.txt")]
+        ),
+        .executableTarget(
+            name: "Day10",
+            dependencies: [],
+            path: "Sources/Day10",
+            resources: [.process("input.txt")]
+        ),
+        .executableTarget(
+            name: "Day11",
+            dependencies: [],
+            path: "Sources/Day11",
+            resources: [.process("input.txt")]
+        ),
+        .executableTarget(
+            name: "Day12",
+            dependencies: [],
+            path: "Sources/Day12",
+            resources: [.process("input.txt")]
+        ),
         .testTarget(
             name: "Day01Tests",
             dependencies: ["Day01"],
@@ -82,6 +112,31 @@ let package = Package(
             name: "Day07Tests",
             dependencies: ["Day07"],
             path: "Tests/Day07Tests"
+        ),
+        .testTarget(
+            name: "Day08Tests",
+            dependencies: ["Day08"],
+            path: "Tests/Day08Tests"
+        ),
+        .testTarget(
+            name: "Day09Tests",
+            dependencies: ["Day09"],
+            path: "Tests/Day09Tests"
+        ),
+        .testTarget(
+            name: "Day10Tests",
+            dependencies: ["Day10"],
+            path: "Tests/Day10Tests"
+        ),
+        .testTarget(
+            name: "Day11Tests",
+            dependencies: ["Day11"],
+            path: "Tests/Day11Tests"
+        ),
+        .testTarget(
+            name: "Day12Tests",
+            dependencies: ["Day12"],
+            path: "Tests/Day12Tests"
         )
     ]
 )
